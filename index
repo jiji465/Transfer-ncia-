@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório de Planejamento Tributário 2026</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&display=swap');
+
+        body {
+            background-color: #f3f4f6;
+            font-family: 'Inter', sans-serif;
+            color: #1f2937;
+            line-height: 1.5;
+            padding: 40px 20px;
+        }
+
+        .a4-paper {
+            background-color: white;
+            width: 210mm; /* A4 width */
+            min-height: 297mm; /* A4 height */
+            margin: 0 auto;
+            padding: 20mm; /* Margins */
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            position: relative;
+        }
+
+        /* Header Styles */
+        header {
+            border-bottom: 2px solid #111827;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        .brand h1 {
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #6b7280;
+            margin: 0;
+        }
+
+        .brand h2 {
+            font-size: 22px;
+            font-weight: 800;
+            color: #111827;
+            margin: 5px 0 0 0;
+        }
+
+        .meta-info {
+            text-align: right;
+            font-size: 11px;
+            color: #6b7280;
+        }
+
+        /* Section Styles */
+        h3 {
+            font-family: 'Merriweather', serif;
+            color: #1e3a8a; /* Dark Blue */
+            font-size: 16px;
+            margin-top: 25px;
+            margin-bottom: 12px;
+            border-bottom: 1px solid #e5e7eb;
+            padding-bottom: 5px;
+        }
+
+        p {
+            margin-bottom: 12px;
+            text-align: justify;
+            font-size: 13px;
+        }
+
+        .scenario-title {
+            font-size: 14px;
+            font-weight: 700;
+            margin-top: 20px;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        /* Table Styles - Detailed */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0 20px 0;
+            font-size: 11px; /* Smaller font for details */
+            font-family: 'Inter', sans-serif;
+        }
+
+        thead th {
+            background-color: #f3f4f6;
+            color: #374151;
+            font-weight: 700;
+            text-align: right;
+            padding: 8px;
+            border-bottom: 2px solid #d1d5db;
+        }
+        
+        thead th:first-child {
+            text-align: left;
+        }
+
+        tbody td {
+            padding: 8px;
+            border-bottom: 1px solid #e5e7eb;
+            text-align: right;
+            color: #4b5563;
+        }
+
+        tbody td:first-child {
+            text-align: left;
+            font-weight: 500;
+        }
+
+        /* Summary Rows */
+        .row-total {
+            background-color: #f9fafb;
+            font-weight: 700;
+            color: #111827;
+        }
+        .row-total td {
+            border-top: 2px solid #9ca3af;
+        }
+
+        /* Highlight Colors */
+        .text-danger { color: #dc2626; }
+        .text-success { color: #166534; }
+        .bg-danger-light { background-color: #fef2f2; }
+        .bg-success-light { background-color: #f0fdf4; }
+
+        /* Impact Box */
+        .impact-box {
+            border: 2px solid #22c55e;
+            background-color: #f0fdf4;
+            border-radius: 8px;
+            padding: 15px;
+            margin-top: 20px;
+            text-align: center;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        
+        .impact-item {
+            flex: 1;
+        }
+        
+        .impact-label {
+            font-size: 12px;
+            color: #166534;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+        
+        .impact-value {
+            font-size: 24px;
+            font-weight: 800;
+            color: #15803d;
+            font-family: 'Merriweather', serif;
+        }
+
+        .analysis-note {
+            background-color: #fffbeb;
+            border-left: 4px solid #f59e0b;
+            padding: 10px;
+            font-size: 12px;
+            color: #92400e;
+            font-style: italic;
+            margin-top: 5px;
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 40px;
+            border-top: 1px solid #e5e7eb;
+            padding-top: 15px;
+            font-size: 10px;
+            color: #9ca3af;
+            text-align: center;
+        }
+
+        @media print {
+            body { padding: 0; background: white; }
+            .a4-paper { box-shadow: none; margin: 0; width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="a4-paper">
+        <header>
+            <div class="brand">
+                <h1>Fator R - Inteligência Tributária</h1>
+                <h2>Planejamento 2026: Santa Gianna</h2>
+            </div>
+            <div class="meta-info">
+                <p><strong>Ref:</strong> Reestruturação de Folha</p>
+                <p><strong>Data:</strong> 21/11/2025</p>
+            </div>
+        </header>
+
+        <p><strong>Assunto:</strong> Comparativo detalhado de custos tributários (Pessoa Física) para manutenção do Anexo III.</p>
+        <p>O objetivo deste estudo é demonstrar matematicamente que a <strong>transferência de funcionários</strong> da DR Saúde para a Santa Gianna é a única via sustentável para evitar o aumento de impostos corporativos sem onerar a Dra. Rebeca.</p>
+
+        <h3>1. Cenário A: SEM TRANSFERÊNCIA (Situação de Risco)</h3>
+        <p>Sem trazer funcionários, a empresa teria que inflar o Pró-labore da sócia drasticamente mês a mês para compensar o déficit de folha acumulado. Veja o impacto progressivo no bolso da sócia:</p>
+
+        <table class="bg-danger-light">
+            <thead>
+                <tr>
+                    <th>Mês (2026)</th>
+                    <th>Pró-labore Exigido</th>
+                    <th>INSS Retido (11%)</th>
+                    <th>IRRF (Imposto Renda)</th>
+                    <th>Custo Total PF</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Janeiro</td>
+                    <td>R$ 9.000,00</td>
+                    <td>R$ 856,46</td>
+                    <td>R$ 1.362,23</td>
+                    <td>R$ 2.218,69</td>
+                </tr>
+                <tr>
+                    <td>Fevereiro</td>
+                    <td>R$ 9.000,00</td>
+                    <td>R$ 856,46</td>
+                    <td>R$ 1.362,23</td>
+                    <td>R$ 2.218,69</td>
+                </tr>
+                <tr>
+                    <td>Março</td>
+                    <td>R$ 15.000,00</td>
+                    <td>R$ 856,46</td>
+                    <td>R$ 3.229,00</td>
+                    <td>R$ 4.085,46</td>
+                </tr>
+                <tr>
+                    <td style="font-weight:bold; color:#dc2626;">Abril (Pico)</td>
+                    <td style="font-weight:bold;">R$ 26.000,00</td>
+                    <td>R$ 856,46</td>
+                    <td style="font-weight:bold; color:#dc2626;">R$ 6.254,00</td>
+                    <td>R$ 7.110,46</td>
+                </tr>
+                <tr class="row-total">
+                    <td>TOTAL ACUMULADO</td>
+                    <td>R$ 59.000,00</td>
+                    <td>R$ 3.425,84</td>
+                    <td>R$ 12.207,46</td>
+                    <td class="text-danger">R$ 15.633,30</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="analysis-note">
+            Nota: Em Abril, seria necessário pagar mais de R$ 6 mil apenas de Imposto de Renda para salvar o Anexo III. Um custo proibitivo.
+        </div>
+
+        <h3>2. Cenário B: COM TRANSFERÊNCIA (Estratégia Recomendada)</h3>
+        <p>Ao transferir a colaboradora <strong>Mariane</strong> para a Santa Gianna, abatemos a necessidade de Pró-labore. O custo de imposto pessoal cai drasticamente:</p>
+
+        <table class="bg-success-light">
+            <thead>
+                <tr>
+                    <th>Mês (2026)</th>
+                    <th>Pró-labore Ajustado</th>
+                    <th>INSS Retido (11%)</th>
+                    <th>IRRF (Imposto Renda)</th>
+                    <th>Custo Total PF</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Janeiro</td>
+                    <td>R$ 5.000,00</td>
+                    <td>R$ 550,00</td>
+                    <td>R$ 205,56</td>
+                    <td>R$ 755,56</td>
+                </tr>
+                <tr>
+                    <td>Fevereiro</td>
+                    <td>R$ 8.000,00</td>
+                    <td>R$ 856,46</td>
+                    <td>R$ 1.137,23</td>
+                    <td>R$ 1.993,69</td>
+                </tr>
+                <tr>
+                    <td>Março</td>
+                    <td>R$ 13.000,00</td>
+                    <td>R$ 856,46</td>
+                    <td>R$ 2.679,00</td>
+                    <td>R$ 3.535,46</td>
+                </tr>
+                <tr>
+                    <td>Abril</td>
+                    <td>R$ 20.000,00</td>
+                    <td>R$ 856,46</td>
+                    <td>R$ 4.604,00</td>
+                    <td>R$ 5.460,46</td>
+                </tr>
+                <tr class="row-total">
+                    <td>TOTAL ACUMULADO</td>
+                    <td>R$ 46.000,00</td>
+                    <td>R$ 3.119,38</td>
+                    <td>R$ 8.625,79</td>
+                    <td class="text-success">R$ 11.745,17</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>3. Conclusão Financeira (1º Quadrimestre)</h3>
+        
+        <div class="impact-box">
+            <div class="impact-item">
+                <div class="impact-label">Custo "Sem Fazer Nada"</div>
+                <div style="color: #dc2626; font-weight:bold;">R$ 15.633,30</div>
+            </div>
+            <div style="font-size: 20px; color: #9ca3af;">VS</div>
+            <div class="impact-item">
+                <div class="impact-label">Custo Estratégico</div>
+                <div style="color: #166534; font-weight:bold;">R$ 11.745,17</div>
+            </div>
+            <div class="impact-item" style="border-left: 1px solid #bbf7d0;">
+                <div class="impact-label">Economia Líquida</div>
+                <div class="impact-value">R$ 3.888,13</div>
+            </div>
+        </div>
+
+        <p style="margin-top: 20px; font-size: 12px;">
+            <strong>Observação Crucial:</strong> Além da economia direta acima (dinheiro no bolso da sócia), essa manobra impede que a empresa pague <strong>9,5% a mais de imposto</strong> sobre o faturamento total (diferença Anexo III vs V). Se faturarmos R$ 300 mil no período, isso evitaria um custo adicional de R$ 28.500,00 na PJ.
+        </p>
+        
+        <p><strong>Recomendação:</strong> Autorizar imediatamente a transferência da funcionária Mariane para a competência Janeiro/2026.</p>
+
+        <div class="footer">
+            Relatório gerado por Fator R Consultoria • Baseado nas projeções financeiras fornecidas em 21/11/2025
+        </div>
+    </div>
+
+</body>
+</html>
