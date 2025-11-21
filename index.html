@@ -18,6 +18,12 @@
             --border: #e2e8f0;
         }
 
+        /* Define o tamanho da página para impressão em A4 */
+        @page {
+            size: A4;
+            margin: 0;
+        }
+
         body {
             background-color: #e5e5e5;
             font-family: 'Inter', sans-serif;
@@ -35,6 +41,7 @@
             padding: 20mm;
             box-shadow: 0 10px 30px rgba(0,0,0,0.1);
             position: relative;
+            box-sizing: border-box;
         }
 
         /* Header */
@@ -220,8 +227,18 @@
         }
 
         @media print {
-            body { background: none; padding: 0; }
-            .page { box-shadow: none; margin: 0; width: 100%; }
+            body {
+                background: none;
+                padding: 0;
+                margin: 0;
+            }
+            .page {
+                box-shadow: none;
+                margin: 0;
+                width: 210mm;
+                min-height: 297mm;
+                padding: 20mm;
+            }
         }
     </style>
 </head>
@@ -231,7 +248,7 @@
         <header>
             <div class="logo">
                 <h1>Fator R Consultoria</h1>
-                <span>Inteligência Tributária & Societária</span>
+                <span>Inteligência Tributária &amp; Societária</span>
             </div>
         </header>
 
